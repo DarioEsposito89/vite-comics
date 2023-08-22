@@ -178,11 +178,11 @@ export default {
                     <button type="button" class="btn btn-outline-primary rounded-0 text-white">SIGN-UP NOW!</button>
                 </div>
 
-                <div class="follow d-flex">
+                <div class="follow d-flex align-items-center">
                     <h3 class="text-primary">FOLLOW US</h3>
                     <ul class="list-social d-flex gap-3">
                         <li v-for="social in listSocial">
-                            <a href="#" class="me-5">
+                            <a href="#" class="me-1 d-flex align-items-center">
                                 <div class="img-container">
                                     <img :src="getImagePath(`/img/${social.img}`)" alt="">
                                 </div>
