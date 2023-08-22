@@ -67,7 +67,7 @@ export default {
                 li > a{
                 
                 > img{
-                    width: 50px;
+                    max-width: 60px;
                     height: 55px;
                 }
             }
