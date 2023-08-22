@@ -3,29 +3,6 @@ export default {
     name: 'TheFooter',
     data() {
         return {
-            linksBuy: [
-                {
-                    img: 'buy-comics-digital-comics.png',
-                    name: 'carachters',
-                },
-                {
-                    img: 'buy-comics-merchandise.png',
-                    name: 'comics',
-                },
-                {
-                    img: 'buy-comics-subscriptions.png',
-                    name: 'movies',
-                },
-                {
-                    img: 'buy-comics-shop-locator.png',
-                    name: 'tv',
-                    resize: 'special-img',
-                },
-                {
-                    img: 'buy-dc-power-visa.svg',
-                    name: 'games',
-                },
-            ],
             listComic: [
                 {
                     name: 'carachters',
@@ -157,14 +134,14 @@ export default {
                     <div id="comics-and-shop">
                         <h6>DC COMICS</h6>
                         <ul>
-                            <li v-for="link in listComic" class="lh-1">
+                            <li v-for="link in listComic" class="lh-1 text-capitalize">
                                 <a href="#">{{ link.name }}</a>
                             </li>
                         </ul>
 
                         <h6>SHOP</h6>
                         <ul>
-                            <li v-for="link in listShop" class="lh-1">
+                            <li v-for="link in listShop" class="lh-1 text-capitalize">
                                 <a href="#">{{ link.name }}</a>
                             </li>
                         </ul>
@@ -173,7 +150,7 @@ export default {
                     <div id="dc">
                         <h6>DC</h6>
                         <ul>
-                            <li v-for="link in listDC" class="lh-1">
+                            <li v-for="link in listDC" class="lh-1 text-capitalize">
                                 <a href="#">{{ link.name }}</a>
                             </li>
                         </ul>
@@ -182,7 +159,7 @@ export default {
                     <div id="SITES">
                         <h6>SITES</h6>
                         <ul>
-                            <li v-for="link in listSites" class="lh-1">
+                            <li v-for="link in listSites" class="lh-1 text-capitalize">
                                 <a href="#">{{ link.name }}</a>
                             </li>
                         </ul>
@@ -205,8 +182,10 @@ export default {
                     <h3 class="text-primary">FOLLOW US</h3>
                     <ul class="list-social d-flex gap-3">
                         <li v-for="social in listSocial">
-                            <a href="#">
-                                <img :src="getImagePath(`/img/${social.img}`)" alt="">
+                            <a href="#" class="me-5">
+                                <div class="img-container">
+                                    <img :src="getImagePath(`/img/${social.img}`)" alt="">
+                                </div>
                             </a> 
                         </li>
                     </ul>
@@ -217,11 +196,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-/* section-middle */
+
 .section-middle {
     background: url("/img/footer-bg.jpg");
     background-size: cover;
-    height: 400px;
+    height: 500px;
     overflow: hidden;
 }
 
