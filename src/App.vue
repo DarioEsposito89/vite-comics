@@ -5,9 +5,10 @@
 </script>
 
 <template>
-  
+
 </template>
 
-<style>
+<style lang="scss">
+@use "./styles/partials/mixins";
 
 </style>
