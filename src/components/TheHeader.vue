@@ -76,7 +76,7 @@ header{
     position: sticky;
     top: 0;
     background-color: white;
-    z-index: 30;
+    z-index: 2;
 
     .container{
         height: 100px;
