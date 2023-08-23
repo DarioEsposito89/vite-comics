@@ -94,7 +94,7 @@ export default {
         </div>
 
         <div class="container">
-            <h1>CURRENT SERIES</h1>
+            <h1 class="text-white">CURRENT SERIES</h1>
 
             <div class="cards">
                 <TheCards class="card" v-for="card in listCards" :src="card.thumb" :title="card.series" />
