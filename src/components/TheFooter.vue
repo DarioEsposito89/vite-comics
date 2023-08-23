@@ -132,34 +132,34 @@ export default {
             <div class="container d-flex justify-content-between align-items-center">
                 <div class="list-container d-flex pt-2 gap-5">
                     <div id="comics-and-shop">
-                        <h6>DC COMICS</h6>
+                        <h4>DC COMICS</h4>
                         <ul>
-                            <li v-for="link in listComic" class="lh-1 text-capitalize">
+                            <li v-for="link in listComic" class="lh-2 text-capitalize">
                                 <a href="#">{{ link.name }}</a>
                             </li>
                         </ul>
 
-                        <h6>SHOP</h6>
+                        <h4>SHOP</h4>
                         <ul>
-                            <li v-for="link in listShop" class="lh-1 text-capitalize">
+                            <li v-for="link in listShop" class="lh-2 text-capitalize">
                                 <a href="#">{{ link.name }}</a>
                             </li>
                         </ul>
                     </div>
                 
                     <div id="dc">
-                        <h6>DC</h6>
+                        <h4>DC</h4>
                         <ul>
-                            <li v-for="link in listDC" class="lh-1 text-capitalize">
+                            <li v-for="link in listDC" class="lh-2 text-capitalize">
                                 <a href="#">{{ link.name }}</a>
                             </li>
                         </ul>
                     </div>
                 
                     <div id="SITES">
-                        <h6>SITES</h6>
+                        <h4>SITES</h4>
                         <ul>
-                            <li v-for="link in listSites" class="lh-1 text-capitalize">
+                            <li v-for="link in listSites" class="lh-2 text-capitalize">
                                 <a href="#">{{ link.name }}</a>
                             </li>
                         </ul>
@@ -200,7 +200,7 @@ export default {
 .section-middle {
     background: url("/img/footer-bg.jpg");
     background-size: cover;
-    height: 500px;
+    max-height: 500px;
     overflow: hidden;
 }
 
@@ -210,7 +210,7 @@ export default {
 
         >div{
             
-            h6 {
+            h4 {
                 color: white;
                 margin: 0.5rem 0;
             }
@@ -218,12 +218,11 @@ export default {
             ul {
                 padding: 0;
             }
-
-            a {
-                color: rgb(173, 168, 168);
-                font-size: 10px;
-                margin: 1rem 0;
-            }
+                a {
+                    color: rgb(173, 168, 168);
+                    font-size: 1rem;
+                    margin: 1rem 0;
+                }
         }
     }
 
