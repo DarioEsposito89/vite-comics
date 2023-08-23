@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: 'TheLightBlueBar.vue',
+    name: 'TheLightBlueBar',
     data() {
         return {
             linksBuy: [
