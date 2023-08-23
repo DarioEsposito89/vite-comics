@@ -1,6 +1,6 @@
 <script>
 export default {
-	name: 'AppHeader',
+	name: 'TheHeader',
 	data() {
 		return {
 			linksNav: [
@@ -102,7 +102,6 @@ header{
                         color: rgb(54, 54, 54);
                         text-transform: uppercase;
                         font-weight: bold;
-
                         &.active{
                             color: rgb(0, 128, 255);
                         }
