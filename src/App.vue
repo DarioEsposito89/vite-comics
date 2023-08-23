@@ -1,11 +1,13 @@
 <script>
 import TheHeader from './components/TheHeader.vue'
+import TheMain from './components/TheMain.vue'
 import TheLightBlueBar from './components/TheLightBlueBar.vue'
-import TheFooter from './components/TheFooter.vue'
+import TheFooter from './components/theFooter.vue'
 	export default {
 		name: 'App',
 		components: {
 			TheHeader,
+			TheMain,
 			TheLightBlueBar,
 			TheFooter,
 		}
@@ -14,6 +16,7 @@ import TheFooter from './components/TheFooter.vue'
 
 <template>
 	<TheHeader />
+	<TheMain />
 	<TheLightBlueBar />
 	<TheFooter />
 </template>
