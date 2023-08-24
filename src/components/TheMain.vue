@@ -97,7 +97,10 @@ export default {
             <h1 class="text-white">CURRENT SERIES</h1>
 
             <div class="cards">
-                <TheCards class="card" v-for="card in listCards" :src="card.thumb" :title="card.series" />
+                <TheCards class="card" v-for="card in listCards" 
+                :key="`card_$(i)`"
+                :src="card.thumb" 
+                :title="card.series" />
             </div>
 
             <div class="load">
